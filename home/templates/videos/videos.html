@@ -1,0 +1,24 @@
+{% load static %}
+<!-- head -->
+<section class="section section--head">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-6">
+                <h1 class="section__title section__title--head">Videolar</h1>
+            </div>
+
+            <div class="col-12 col-xl-6">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__item"><a href="{% url 'index' %}">Asosiy</a></li>
+                    <li class="breadcrumb__item breadcrumb__item--active">Videolar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end head -->
+
+<!-- catalog -->
+{% block videos_tag %}{% include 'components/videos_tag.html' %}{% endblock %}
+<!-- end catalog -->
+
